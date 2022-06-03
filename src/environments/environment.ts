@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   apiUrl: 'https://api.themoviedb.org/3',
-  apiKey: '9198fa6d9a9713bc6b03ee9582525917',
+  apiKey: '<your moviedb api key here>',
   backdropUrl: 'https://image.tmdb.org/t/p/original'
 };
 
