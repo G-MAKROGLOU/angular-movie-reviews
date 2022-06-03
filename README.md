@@ -8,10 +8,7 @@
 4) To start the app, run ``` npm start ```, ng cli is required for this step.
 5) To test the app, run ``` npm run test ```,  ng cli is required for this step.
 6) To create a production build, run  ``` npm run build ```, ng cli is required for this step.
-7) Once you have the build, you can use it to deploy it to any hosting provider. Below you will find instructions on how to
-   deploy this app in github pages along with a url to a deployment. 
-   
-   
-## To deploy the app in Github pages:
+7) Once you have the build, you can use it to deploy it to any hosting provider (each provider has a different procedure). Below you will find a url to a deployment on Github pages.
 
-1) 
+### Deployment Url: 
+#### https://g-makroglou.github.io/angular-movie-reviews/
