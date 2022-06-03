@@ -1,0 +1,100 @@
+.movie-reviewer-preview-card {
+    background-color: rgba(16, 0, 43, .4);
+    backdrop-filter: blur(8px);
+    width: 100%;
+    min-height: 100%;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+.movie-reviewer-no-preview-prompt {
+    color: #fff;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+
+.movie-reviewer-review-box {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.movie-reviewer-review-box-row-1 {
+    display: flex;
+    width: 100%;
+}
+
+
+.movie-reviewer-preview-image {
+    width: 30%;
+}
+
+.movie-reviwer-preview-title, .movie-reviwer-preview-overview {
+    color: #fff;
+    padding: 10px;
+}
+
+
+.movie-reviwer-preview-title {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+
+.movie-reviwer-genre-container {
+    background-color: transparent;
+    border: 0;
+    padding: 10px;
+}
+
+
+.movie-reviwer-rating-box {
+    display: flex;
+    align-items: center;
+}
+
+.movie-reviwer-preview-info {
+    color: #fff;
+    font-weight: bolder;
+    margin-right: 10px;
+    padding-bottom: 5px;
+    padding: 10px;
+}
+
+
+.movie-reviewer-image-gallery-title {
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+.movie-reviewer-review-box-row-2 {
+    width: 100%;
+}
+
+.movie-reviewer-image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 180px;
+    overflow-y: auto;
+}
+
+.movie-reviewer-image-gallery::-webkit-scrollbar {
+    background-color: transparent;
+    width: 5px;
+}
+
+.movie-reviewer-image-gallery::-webkit-scrollbar-thumb {
+    background-color:rgb(16, 0, 43);
+    border-radius: 50px;
+}
+
+.movie-reviewer-image-gallery-image {
+    width: 100px;
+}

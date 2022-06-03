@@ -1,0 +1,34 @@
+<section class="movie-viewer-root">
+ 
+   <!-- Global Loading Spinner -->
+   <app-loading-spinner *ngIf="_spinnerVisible | async"></app-loading-spinner>
+   <!-- Global Notification -->
+   <app-notification></app-notification>
+  <!-- Three circular areas that cause a bluring effect on the background -->
+  <div class="movie-viewer-glass-circle-1"></div>
+  <div class="movie-viewer-glass-circle-2"></div>
+  <div class="movie-viewer-glass-circle-3"></div>
+  
+  <!-- Navbar -->
+  <nav class="movie-viewer-navbar">
+    <img class="movie-viewer-navbar-logo" src="/assets/movie-reviewer-logo.png" alt="Logo"/>
+    
+    <!-- Search box -->
+    <div class="slds-form-element movie-viewer-navbar-input">
+      <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_right">
+        <svg class="slds-icon slds-input__icon slds-input__icon_right slds-icon-text-default" aria-hidden="true">
+          <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#search"></use>
+        </svg>
+        <input (input)="onMovieSearch($event)" type="text" id="text-input-id-47" placeholder="Placeholder text…" class="slds-input" />
+      </div>
+    </div>
+  </nav>
+
+  <!-- The side bar on the left that contains the movies -->
+  <app-sidebar [movies]="_movies | async"></app-sidebar>
+
+</section>
+
+<router-outlet></router-outlet> 
+
+

@@ -1,0 +1,58 @@
+.movie-viewer-root {
+    display: flex;
+    flex-direction: column;
+    background-color: #240046;
+}
+
+
+.movie-viewer-navbar {
+    width: 100%;
+    background-color: #10002b;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.movie-viewer-navbar-logo {
+    width: 60px;
+}
+
+.movie-viewer-navbar-input, .movie-viewer-navbar-logo {
+    margin: 0px 10px;
+}
+
+
+.movie-viewer-glass-circle-1, .movie-viewer-glass-circle-2, .movie-viewer-glass-circle-3 {
+    border-radius: 50%;
+    background-color: #3c096c;
+    position: fixed;
+    
+}
+
+.movie-viewer-glass-circle-1 {
+    width: 150px;
+    height: 150px;
+    bottom: 20px;
+    left: 80px;
+    filter: blur(40px);
+}
+
+
+.movie-viewer-glass-circle-2 {
+    width: 450px;
+    height: 450px;
+    top: 20px;
+    right: 80px;
+    filter: blur(80px);
+}
+
+
+.movie-viewer-glass-circle-3 {
+    width: 150px;
+    height: 150px;
+    top: 450px;
+    left: 30%;
+    filter: blur(40px);
+}

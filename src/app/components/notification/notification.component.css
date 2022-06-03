@@ -1,0 +1,64 @@
+.movie-reviewer-notification {
+    width: 250px;
+    height: max-content;
+    padding: 10px;
+    position: fixed;
+    top: 20px;
+    right: -200px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 5px;
+} 
+
+.movie-reviewer-notification-content {
+    color: #fff;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    line-clamp: 4;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    margin-left: 20px;
+}
+
+.movie-reviewer-notification-invisible {
+    animation: hide .3s linear forwards;
+} 
+
+.movie-reviewer-notification-visible {
+    animation: show .15s linear forwards;
+} 
+
+.movie-reviewer-notification-success {
+    background-color: lightgreen;
+}
+
+.movie-reviewer-notification-error {
+    background-color: tomato;
+}
+
+.movie-reviewer-notification-warning {
+    background-color: orange;
+}
+
+
+@keyframes show {
+    to {
+        transform: translateX(-220px);
+    }
+}
+
+@keyframes hide {
+    to {
+        transform: translateX(200px);
+    }
+}
+
+
+.movie-reviwer-notification-close-icon {
+    color: #fff;
+    cursor: pointer;
+}
